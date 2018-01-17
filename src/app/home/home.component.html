@@ -1,0 +1,14 @@
+<section >
+
+  <div class="row">
+      <div *ngFor="let menuItem of menu" class="col-sm-6 col-xs-12">
+          <a [routerLink]="['/item-detail', menuItem.id]">
+            <app-menu-item [menuItem]="menuItem"></app-menu-item>
+          </a>
+        </div>
+  </div>
+
+</section>
+
+
+
